@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktný formulár</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .contact-form {
+            background-color: #b9b9b9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #343a40;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-check {
+            margin-bottom: 15px;
+        }
+        .form-check-label {
+            font-weight: normal;
+            color: #343a40;
+        }
+        .btn-primary {
+            background-color: #0261c7;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Kontaktný Formulár</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="meno">Meno:</label>
+                <input type="text" class="form-control" id="meno" name="meno" required>
+            </div>
+            <div class="form-group">
+                <label for="priezvisko">Priezvisko:</label>
+                <input type="text" class="form-control" id="priezvisko" name="priezvisko" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Pohlavie:</label>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="muz" name="pohlavie" value="muz">
+                    <label class="form-check-label" for="muz">Muž</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="zena" name="pohlavie" value="zena">
+                    <label class="form-check-label" for="zena">Žena</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="ine" name="pohlavie" value="ine">
+                    <label class="form-check-label" for="ine">Iné</label>
+                </div>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="suhlas" name="suhlas" required>
+                <label class="form-check-label" for="suhlas">Súhlasím s podmienkami</label>
+            </div>
+            <div class="form-group">
+                <label for="otazky">Vaša otázka:</label>
+                <textarea class="form-control" id="otazky" name="otazky" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Odoslať</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
