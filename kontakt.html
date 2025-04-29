@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dávid stránka</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      background: linear-gradient(135deg, #b4b4b4, #d1d1d1);
+      color: #4a4a4a;
+    }
+    header {
+      background-color: #a1abad;
+      color: #2e2e2e;
+      padding: 40px 20px;
+      text-align: center;
+      box-shadow: 0 px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    nav {
+      background-color: #788299;
+      padding: 15px 0;
+      text-align: center;
+      box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #4a4a4a;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: 600;
+      font-size: 17px;
+      transition: color 0.3s ease;
+    }
+
+
+    .contact-form {
+      background: #3196da;
+      padding: 2rem;
+      max-width: 500px;
+      margin: auto;
+      border-radius: 16px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+      border: 2px solid #d4d4d4;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 1.5rem;
+      font-size: 28px;
+      text-align: center;
+      color: #5a5a5a;
+    }
+
+    .form-group, .form-check {
+      margin-bottom: 1.2rem;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      color: #5a5a5a;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: #fafafa;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-check-input {
+      margin-right: 0.5rem;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 0.9rem;
+      background: linear-gradient(135deg, #9c9c9c, #7e7e7e);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #7a7a7a, #5e5e5e);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dávid stránka</h1>
+  </header>
+
+  <nav>
+    <a href="uloha.html">Domov</a>
+    <a href="zaluby.html">Záľuby</a>
+    <a href="rozvrh.html">Rozvrh</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+</head>
+<body>
+    <div class="contact-form">
+        <h1>Kontaktný Formulár</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="meno">Meno:</label>
+                <input type="text" class="form-control" id="meno" name="meno" required>
+            </div>
+            <div class="form-group">
+                <label for="priezvisko">Priezvisko:</label>
+                <input type="text" class="form-control" id="priezvisko" name="priezvisko" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label>Pohlavie:</label>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="muz" name="pohlavie" value="muz">
+                    <label class="form-check-label" for="muz">Muž</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="zena" name="pohlavie" value="zena">
+                    <label class="form-check-label" for="zena">Žena</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="ine" name="pohlavie" value="ine">
+                    <label class="form-check-label" for="ine">Iné</label>
+                </div>
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="suhlas" name="suhlas" required>
+                <label class="form-check-label" for="suhlas">Súhlasím s podmienkami</label>
+            </div>
+            <div class="form-group">
+                <label for="otazky">Vaša otázka:</label>
+                <textarea class="form-control" id="otazky" name="otazky" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Odoslať</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
